@@ -1,0 +1,9 @@
+.feedback_options {
+    display: flex;
+    column-gap: 10px;
+}
+
+.feedback_options button {
+    cursor: pointer;
+    text-transform: capitalize;
+}

@@ -1,0 +1,18 @@
+.statistic_list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+}
+
+.statistic_list li {
+  display: flex;
+  align-items: center;
+}
+
+.statistic_list p {
+  text-transform: capitalize;
+}
+
+li:last-child p {
+  text-transform: none;
+}
