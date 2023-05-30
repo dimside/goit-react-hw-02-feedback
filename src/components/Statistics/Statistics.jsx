@@ -13,7 +13,7 @@ export const Statistics = props => {
                 : statistic[0]}
             </p>
             <span>
-              :
+              :{' '}
               {statistic[0] === 'positivePercentage'
                 ? `${statistic[1]}%`
                 : statistic[1]}
