@@ -5,19 +5,10 @@ export const Statistics = props => {
   return (
     <div>
       <ul className={css.statistic_list}>
-        {Object.entries(props).map(statistic => (
+        {Object.entries(props).map(([name, value]) => (
           <li key={nanoid()}>
-            <p>
-              {statistic[0] === 'positivePercentage'
-                ? 'Positive feedback'
-                : statistic[0]}
-            </p>
-            <span>
-              :{' '}
-              {statistic[0] === 'positivePercentage'
-                ? `${statistic[1]}%`
-                : statistic[1]}
-            </span>
+            <p>{name === 'positivePercentage' ? 'Positive feedback' : name}</p>
+            <span>: {name === 'positivePercentage' ? `${value}%` : value}</span>
           </li>
         ))}
       </ul>
